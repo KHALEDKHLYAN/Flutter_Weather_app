@@ -1,19 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/screens/home/home_screen.dart';
+import 'package:weather_app/app.dart';
+
 
 void main() {
-  runApp(const MyApp());
+//Todo: Add WIdgets Binding
+//Todo: Init Local Storage
+//Todo: Await Native Splash
+//Todo: Initialize Firebase
+//Todo: Initialize Authentication
+
+  runApp(const App());
 }
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
-    );
-  }
-}
-
