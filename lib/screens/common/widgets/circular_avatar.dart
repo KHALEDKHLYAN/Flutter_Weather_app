@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/util/constants/colors.dart';
-import 'package:weather_app/util/constants/image_strings.dart';
 
 class CircularAvatar extends StatelessWidget {
   const CircularAvatar({super.key});
@@ -14,8 +13,7 @@ class CircularAvatar extends StatelessWidget {
       ),
       child: CircleAvatar(
         radius: 75,
-        // foregroundImage:AssetImage(WImages.avatarAsset),
-        backgroundImage: AssetImage(WImages.avatarAsset),
+        // backgroundImage: AssetImage(WImages.avatarAsset),
         backgroundColor: WColors.primary.withOpacity(0.5),
       ),
     );

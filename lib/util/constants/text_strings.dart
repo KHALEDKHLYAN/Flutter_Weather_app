@@ -17,4 +17,6 @@ class Wtexts {
   static const topHeaderTitle = 'Location permission needed';
   static const topHeaderSubTitle = 'Please enable location permission to get\n'
       'more accurate weather information';
+  static const allowLocationText = 'Allow Location';
+
 }

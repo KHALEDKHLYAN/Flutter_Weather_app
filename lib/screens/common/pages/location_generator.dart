@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/screens/common/widgets/circular_avatar.dart';
+import 'package:weather_app/screens/widgets/getting_started.dart';
 import 'package:weather_app/util/constants/colors.dart';
 import 'package:weather_app/util/constants/image_strings.dart';
+import 'package:weather_app/util/constants/sizes.dart';
+import 'package:weather_app/util/constants/text_strings.dart';
 
 class LocationGenerator extends StatelessWidget {
   const LocationGenerator({super.key});
@@ -34,10 +37,17 @@ class LocationGenerator extends StatelessWidget {
                   
                   children: [
                     //CircularVatar
-                    CircularAvatar()
+                    CircularAvatar(),
+                    SizedBox(height: WSizes.spaceBtwnItems),
                     //Title
+                    Text(Wtexts.topHeaderTitle,style: Theme.of(context).textTheme.headlineMedium,),
+                    SizedBox(height: WSizes.spaceBtwnItems),
                     //SubtitleText
+                    Text(Wtexts.topHeaderSubTitle,style: Theme.of(context).textTheme.bodySmall,),
+                    SizedBox(height: WSizes.spaceBtwnScetions),
                     //Get_Location Button
+                    Spacer(),
+                    GettingStartedButton(textBtn: Wtexts.allowLocationText,onPressed: (){})
                   ],
                 ),
               ),
