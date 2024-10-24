@@ -17,7 +17,7 @@ class CustomDotsIndicator extends StatelessWidget {
           dotWidth: 10.0,               // Width of each dot
           spacing: 8.0,                 // Space between dots
         ),
-        controller: PageController(),  // Use a PageController, even if not directly linked to a PageView
+        controller: PageController(initialPage: 1),  // Use a PageController, even if not directly linked to a PageView
       ),
     );
   }
