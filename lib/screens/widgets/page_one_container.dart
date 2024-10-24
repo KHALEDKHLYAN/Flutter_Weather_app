@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/screens/common/pages/location_generator.dart';
+import 'package:weather_app/screens/common/styles/dot_indicators.dart';
 import 'package:weather_app/screens/widgets/getting_started.dart';
 import 'package:weather_app/util/constants/colors.dart';
 import 'package:weather_app/util/constants/sizes.dart';
@@ -26,6 +26,9 @@ class PageOneContainer extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          //Smooth_Indicator_Dots
+          CustomDotsIndicator(),
+          //Text
           Text(Wtexts.pageText1,
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center),
@@ -40,10 +43,9 @@ class PageOneContainer extends StatelessWidget {
             height: 55,
           ),
           GettingStartedButton(
-            textBtn: Wtexts.buttonText,
-            onPressed: () => Navigator.push(context,
-                MaterialPageRoute(builder: (context) => LocationGenerator())),
-          ),
+              textBtn: Wtexts.buttonText,
+              onPressed: () =>
+                  Navigator.pushNamed(context, "/allow_Location_page")),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

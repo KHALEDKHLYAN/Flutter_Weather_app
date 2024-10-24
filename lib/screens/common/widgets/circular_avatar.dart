@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/util/constants/colors.dart';
+import 'package:weather_app/util/constants/image_strings.dart';
 
 class CircularAvatar extends StatelessWidget {
   const CircularAvatar({super.key});
@@ -8,13 +9,14 @@ class CircularAvatar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container( // Add padding if you want a border
       decoration: BoxDecoration(
-        color: WColors.primary.withOpacity(0.5), // Border color
+        color: WColors.primary, // Border color
         shape: BoxShape.circle,
       ),
       child: CircleAvatar(
-        radius: 75,
+        radius: 65,
         // backgroundImage: AssetImage(WImages.avatarAsset),
-        backgroundColor: WColors.primary.withOpacity(0.5),
+        backgroundColor: WColors.primary,
+        child: IconButton(onPressed: (){}, icon: Image.asset(WImages.sunnyCloud)),
       ),
     );
   }

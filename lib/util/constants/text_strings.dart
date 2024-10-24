@@ -19,4 +19,8 @@ class Wtexts {
       'more accurate weather information';
   static const allowLocationText = 'Allow Location';
 
+  //Location_Details_Text
+  static const locationDetailsText = 'Discover the weather ';
+  static const locationDetailsSubText = 'Arround the world';
+
 }

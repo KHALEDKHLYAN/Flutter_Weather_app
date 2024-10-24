@@ -7,6 +7,9 @@ class WColors {
   static const Color containerColor = Color(0xFF5445AF);
   static const Color primary = Color(0xFF4b68ff);
   static const Color secondary = Color(0xFFFFE24B);
+  static const Color primaryFaded = Color(0xFF6F4DE0);
+
+ 
 
   //Gradient Colors
   static const lineGradient =  LinearGradient(

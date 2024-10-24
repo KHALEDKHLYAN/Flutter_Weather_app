@@ -25,7 +25,7 @@ class LocationGenerator extends StatelessWidget {
           SafeArea(
             child: Center(
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 24,vertical: 24),
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                 width: 338,
                 height: 438,
                 alignment: Alignment.center,
@@ -34,20 +34,30 @@ class LocationGenerator extends StatelessWidget {
                   color: WColors.lightContainer,
                 ),
                 child: Column(
-                  
                   children: [
+
                     //CircularVatar
                     CircularAvatar(),
                     SizedBox(height: WSizes.spaceBtwnItems),
                     //Title
-                    Text(Wtexts.topHeaderTitle,style: Theme.of(context).textTheme.headlineMedium,),
+                    Text(
+                      Wtexts.topHeaderTitle,
+                      style: Theme.of(context).textTheme.headlineMedium,
+                    ),
                     SizedBox(height: WSizes.spaceBtwnItems),
                     //SubtitleText
-                    Text(Wtexts.topHeaderSubTitle,style: Theme.of(context).textTheme.bodySmall,),
+                    Text(
+                      Wtexts.topHeaderSubTitle,
+                      style: Theme.of(context).textTheme.bodySmall,
+                    ),
                     SizedBox(height: WSizes.spaceBtwnScetions),
                     //Get_Location Button
                     Spacer(),
-                    GettingStartedButton(textBtn: Wtexts.allowLocationText,onPressed: (){})
+                    GettingStartedButton(
+                      textBtn: Wtexts.allowLocationText,
+                      onPressed: () =>
+                          Navigator.pushNamed(context, '/location_details'),
+                    )
                   ],
                 ),
               ),
