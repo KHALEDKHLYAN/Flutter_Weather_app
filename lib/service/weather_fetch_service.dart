@@ -5,7 +5,8 @@ import 'package:weather_app/util/constants/api_constants.dart';
 import 'package:weather_app/util/constants/colors.dart';
 
 class WeatherFetchService extends ChangeNotifier {
-  final WeatherService _weatherService = WeatherService(ApiConstant.secretAPIKey);
+  final WeatherService _weatherService =
+      WeatherService(ApiConstant.secretAPIKey);
   Weather? _weather;
 
   Future<void> fetchWeather(BuildContext context) async {
@@ -31,13 +32,27 @@ class WeatherFetchService extends ChangeNotifier {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        backgroundColor: WColors.error.withOpacity(0.6),
-        title:  Text('Error'),
-        content: Text(message),
+        backgroundColor: WColors.error,
+        title: Text('Error',
+            style: Theme.of(context)
+                .textTheme
+                .headlineLarge
+                ?.copyWith(color: WColors.textWhite)),
+        content: Text(message,
+            style: Theme.of(context)
+                .textTheme
+                .headlineMedium
+                ?.copyWith(color: WColors.black)),
         actions: <Widget>[
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
-            child:  Text('cool!'),
+            child: Text(
+              'cool!',
+              style: Theme.of(context)
+                  .textTheme
+                  .headlineMedium
+                  ?.copyWith(color: WColors.textWhite),
+            ),
           ),
         ],
       ),

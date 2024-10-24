@@ -76,7 +76,7 @@ class CustomedContainer extends StatelessWidget {
                   ),
                   SizedBox(height: screenHeight * 0.01),
                   Text(
-                    '°C',
+                    '$temperature°C',
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           color: WColors.textWhite,
                           // Responsive, slightly larger

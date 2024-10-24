@@ -1,0 +1,25 @@
+{
+  "weatherData": [
+    {
+      "currentLocation": "Russia",
+      "cityName": "Moscow",
+      "weatherConditions": "Mostly Cloudy",
+      "imageAsset": "assets/icons/Big_snow_little_snow.png",
+      "temperature": "-4"
+    },
+    {
+      "currentLocation": "China",
+      "cityName": "Beijing",
+      "weatherConditions": "Mostly Sunny",
+      "imageAsset": "assets/icons/Sun.png",
+      "temperature": "4"
+    },
+    {
+      "currentLocation": "United States",
+      "cityName": "California",
+      "weatherConditions": "Clear",
+      "imageAsset": "assets/icons/Sun_cloud_hailstone.png",
+      "temperature": "6"
+    }
+  ]
+}
